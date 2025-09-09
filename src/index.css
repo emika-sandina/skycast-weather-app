@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("./assets/gradient.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.container {
+  max-width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.container .bottom {
+  width: 60%;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 3rem;
+  background: rgb(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+  margin-bottom: 17rem;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+input {
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 25%;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.search button {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 15px;
+  width: 5%;
+  cursor: pointer;
+}
+
+.logo-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.logo-icon {
+  font-size: 3.8rem;
+  margin-right: 0.7rem;
+  color: #fff;
+}
+
+.app-name {
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    height: auto;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .container .bottom {
+    width: 90%;
+    padding: 1rem;
+    flex-direction: column;
+    margin-top: 5rem;
+    font-size: 0.8rem;
+  }
+
+  .app .top {
+    margin: 0.5rem auto;
+  }
+
+  input {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .search button {
+    width: 20%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .container .bottom > div {
+    margin-bottom: 1rem;
+  }
+}
